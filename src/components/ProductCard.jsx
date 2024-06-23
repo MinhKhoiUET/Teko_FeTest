@@ -1,5 +1,5 @@
-
-const ProductCard = ({ name, id, image, price, discountPercent, availableQuantity }) =>{
+// eslint-disable-next-line react/prop-types
+const ProductCard = ({ name, image, price, discountPercent, availableQuantity }) =>{
     const calculateDiscountPrice = (price, discountPercent) => {
         return (price * (100 - discountPercent)) / 100;
     }
